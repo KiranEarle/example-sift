@@ -1,0 +1,9 @@
+{
+  "name": "example-sift",
+  "display-name": "Kiran Earle",
+  "description": "Sift Test",
+  "author": "",
+  "version": "1.0.0",
+  "#": "Please use 'redsift npm' instead of system 'npm' ",
+  "dependencies": {}
+}

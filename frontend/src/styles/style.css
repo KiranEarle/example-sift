@@ -1,0 +1,168 @@
+/**
+ * Sample Sift CSS
+ */
+/* @import "@redsift/ui-rs-core/dist/css/ui-rs-core.min.css"; */
+
+
+body, html, h1, h2, h3, p, ul, li {
+  background: var(--background-color);
+  color: var(--font-color);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  margin-top: 16px;
+  padding: 7px 50px;
+  background-color: #39375B;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+.header {
+  background-color: #282867;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-stats {
+  border: 1px solid white;
+  color: #fff;
+  margin-right: 20px;
+  padding: 20px;
+  min-width: 180px;
+}
+
+@media (max-width: 730px){
+  .header-stats {
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.messages-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.messages {
+  color: #000;
+  border: 1px solid grey;
+  margin-bottom: 5px;
+  max-width: 350px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px 20px 0px 20px;
+  overflow: overlay;
+}
+
+.message-header {
+  font-size: 18px;
+}
+
+.message-subject {
+  font-size: 16px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+
+.detail-title {
+  font-weight: bold;
+}
+
+.full-details {
+  font-size: 16px;
+}
+
+.dmarc-title {
+  padding: 10px 0;
+}
+
+.expand-hide {
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #0973CE;
+}
+
+.fade-header-appear {
+  opacity: 0;
+  transform: scale(0.97) translateY(20px);
+}
+
+.fade-header-appear.fade-header-appear-active {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 300ms linear, transform 300ms ease-in-out;
+}
+
+.fade-appear {
+  opacity: 0;
+  transform: scale(0.97) translateY(20px);
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 300ms linear, transform 300ms ease-in-out;
+}
+
+
+/* Modal Styling */
+.ReactModal__Content {
+  opacity: 0;
+}
+
+.ReactModal__Content--after-open {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.ReactModal__Content--before-close {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.modal {
+  position: fixed;
+  padding: 40px;
+  top: 100px;
+  left: 100px;
+  right: 100px;
+  bottom: 100px;
+  overflow: scroll;
+  background-color: #fff;
+}
+
+@media (max-width: 650px) {
+  .modal {
+    padding: 20px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.ReactModal__Body--open {
+  overflow-y: hidden;
+}
