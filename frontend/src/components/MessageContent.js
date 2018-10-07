@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { getReturnPathDomain } from '../helpers/getReturnPathDomain'
 
 const MessageContent = ({header, message, closeModal, fullDetails}) => {
@@ -28,10 +29,37 @@ const MessageContent = ({header, message, closeModal, fullDetails}) => {
         <li><span className='detail-title'>SPF: </span>{spf}</li>
         <li><span className='detail-title'>DKIM: </span>{dkim}</li>
       </ul>
+      {closeModal &&
         <button onClick={() => closeModal()}>Close</button>
+      }
       </div>}
     </div>
   )
+}
+
+MessageContent.PropTypes = {
+  /**
+   * takes a string for the header.
+   */
+  header: PropTypes.string,
+
+  /**
+   * takes an object with details of message.
+   */
+   message: PropTypes.object,
+
+  /**
+   * function that is passed in if the content is a modal
+   * to be passed in as an onclick function on a button,
+   * will not render the button if not passed as a prop.
+   */
+  closeModal: PropTypes.func,
+
+  /**
+   * boolean which checkes if user wants all the details
+   * to be shown.
+   */
+
 }
 
 export default MessageContent
