@@ -19,7 +19,7 @@ export default class MyView extends SiftView {
 
     render(
       <App data={data} />,
-    document.getElementById('home'));
+    document.getElementById('root'));
   }
 
   onReceive(value) {

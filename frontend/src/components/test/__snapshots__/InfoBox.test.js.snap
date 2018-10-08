@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render without blowing up 1`] = `
+<section
+  class="info-box"
+>
+  <p>
+    Here are a list of your emails, click "more details" to get more information.
+  </p>
+  <p>
+    Remember if the "from" & "Return Path Domain" do not have the same domain name, this mail cannot be trusted.
+  </p>
+</section>
+`;

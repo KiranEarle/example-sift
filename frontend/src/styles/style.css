@@ -4,7 +4,7 @@
 /* @import "@redsift/ui-rs-core/dist/css/ui-rs-core.min.css"; */
 
 
-body, html, h1, h2, h3, p, ul, li {
+body, html, h1, h2, h3, p, ul, li, section {
   background: var(--background-color);
   color: var(--font-color);
   font-family: sans-serif;
@@ -48,6 +48,23 @@ button {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+}
+
+.info-box {
+  background-color: #c3e991;
+  color: #000;
+  padding: 30px;
+}
+
+.info-box-details-appear {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.info-box-details-appear.info-box-details-appear-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1000ms linear, transform 1000ms ease-in-out;
 }
 
 .messages-container {

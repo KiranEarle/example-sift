@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render with props without blowing up 1`] = `
+<div
+  className="header"
+>
+  <div
+    className="header-stats"
+  >
+    <h2>
+      Message Total
+    </h2>
+    <div>
+      23
+    </div>
+  </div>
+  <div
+    className="header-stats"
+  >
+    <h2>
+      Word Total
+    </h2>
+    <div>
+      343
+    </div>
+  </div>
+  <div
+    className="header-stats"
+  >
+    <h2>
+      Words/Message
+    </h2>
+    <div>
+      433
+    </div>
+  </div>
+</div>
+`;

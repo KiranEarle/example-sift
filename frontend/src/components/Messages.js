@@ -4,7 +4,8 @@ import { condenseHeaderText } from '../helpers/condenseHeaderText'
 import PropTypes from 'prop-types'
 import Modal from 'react-modal'
 
-Modal.setAppElement('#root')
+
+if (process.env.NODE_ENV !== 'test') Modal.setAppElement('#root')
 
 class Messages extends Component {
   static Text = MessageContent
@@ -52,7 +53,7 @@ class Messages extends Component {
   }
 }
 
-Messages.PropTypes = {
+Messages.propTypes = {
   /**
    * Takes an object with the message properties
    */

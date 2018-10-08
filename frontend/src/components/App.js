@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 import Header from './Header'
 import Messages from './Messages'
+import { InfoBox } from './InfoBox'
 import { CSSTransition } from 'react-transition-group'
 
 class App extends Component {
@@ -35,6 +36,14 @@ class App extends Component {
         >
         <Header counts={counts} />
         </CSSTransition>
+        <CSSTransition
+          appear={true}
+          in={true}
+          timeout={1000}
+          classNames='info-box-details'
+        >
+        <InfoBox />
+        </CSSTransition>
         <div className='messages-container'>
           {this.renderEmailData()}
         </div>
@@ -43,7 +52,7 @@ class App extends Component {
   }
 }
 
-App.PropTypes = {
+App.propTypes = {
   /**
    * Takes an array of objects
    */

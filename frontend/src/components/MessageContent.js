@@ -37,12 +37,14 @@ const MessageContent = ({header, message, closeModal, fullDetails}) => {
   )
 }
 
-MessageContent.PropTypes = {
+MessageContent.propTypes = {
   /**
-   * takes a string for the header.
+   * takes a string or object for the header.
    */
-  header: PropTypes.string,
-
+  header: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object
+  ]),
   /**
    * takes an object with details of message.
    */

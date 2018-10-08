@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render with props without blowing up 1`] = `
+<div>
+  <div
+    className="expanded-header"
+  >
+    <h2
+      className="message-header"
+    >
+      text
+    </h2>
+  </div>
+  <p
+    className="message-subject"
+  >
+    Subject: 
+    more text
+  </p>
+</div>
+`;

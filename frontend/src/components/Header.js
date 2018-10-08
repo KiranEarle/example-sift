@@ -13,14 +13,14 @@ const Header = ({counts}) => {
         <div>{counts.wordTotal}</div>
       </div>
       <div className='header-stats'>
-      <h2>Total</h2>
+      <h2>Words/Message</h2>
         <div>{counts.wpmTotal}</div>
       </div>
     </div>
   )
 }
 
-Header.PropTypes = {
+Header.propTypes = {
   /**
    * Takes in an object containing details of the messages
    */
